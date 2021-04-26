@@ -11,7 +11,7 @@
   "id": "urn:uvci:af5vshde843jf831j128fj",
   "name": "COVID-19 Vaccination Certificate",
   "description": "COVID-19 Vaccination Certificate",
-  "issuanceDate": "2021-04-08T23:41:41.222Z",
+  "issuanceDate": "2021-04-26T23:36:07.877Z",
   "expirationDate": "2029-12-03T12:19:52Z",
   "credentialSubject": {
     "type": "VaccinationEvent",
@@ -37,8 +37,8 @@
   "issuer": "did:key:z6MkrtYMJe2ZesvsnoSr8K1yVerjo6EhC2G5jxBDKrD284L2",
   "proof": {
     "type": "Ed25519Signature2018",
-    "created": "2021-04-08T23:41:41Z",
-    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..n28cb2zJ3vYCRLgXEWBQt5OqijcwH79Dx0lgcKMpHRywgwN0wUXSoFAkk2tB_WcUNwh7axy0YiE0MEC3ONd6Dg",
+    "created": "2021-04-26T23:36:08Z",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..LcUqBHvvBfYMKlVnMDqBJyD-Zjs4FCnFWFZEeBsRZleybXi6HCo6q3FXXsl-U7xzMe0P3n-3IkSgk8aY3Go5Dg",
     "proofPurpose": "assertionMethod",
     "verificationMethod": "did:key:z6MkrtYMJe2ZesvsnoSr8K1yVerjo6EhC2G5jxBDKrD284L2#z6MkrtYMJe2ZesvsnoSr8K1yVerjo6EhC2G5jxBDKrD284L2"
   }

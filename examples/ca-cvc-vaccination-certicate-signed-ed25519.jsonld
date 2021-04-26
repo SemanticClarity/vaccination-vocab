@@ -1,7 +1,7 @@
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "https://w3id.org/vaccination/v1",
+    "https://w3c-ccg.github.io/vaccination-vocab/context/v1/CA/unstable.json",
     "https://w3id.org/security/bbs/v1"
   ],
   "type": [
@@ -11,14 +11,14 @@
   "id": "urn:uvci:af5vshde843jf831j128fj",
   "name": "COVID-19 Vaccination Certificate",
   "description": "COVID-19 Vaccination Certificate",
-  "issuanceDate": "2021-04-26T23:36:59.419Z",
+  "issuanceDate": "2021-04-26T23:36:07.872Z",
   "expirationDate": "2029-12-03T12:19:52Z",
   "credentialSubject": {
     "type": "VaccinationEvent",
-    "batchNumber": "1183738569",
-    "administeringCentre": "MoH",
-    "healthProfessional": "MoH",
-    "countryOfVaccination": "NZ",
+    "batchNumber": "UI256AA",
+    "administeringCentre": "0000004570208",
+    "healthProfessional": "LPN",
+    "countryOfVaccination": "CA",
     "recipient": {
       "type": "VaccineRecipient",
       "givenName": "JOHN",
@@ -29,16 +29,16 @@
     "vaccine": {
       "type": "Vaccine",
       "disease": "COVID-19",
-      "atcCode": "J07BX03",
-      "medicinalProductName": "COVID-19 Vaccine Moderna",
+      "atcCode": "28571000087109",
+      "medicinalProductName": "MODERNA COVID-19 mRNA-1273 (COVID-19)",
       "marketingAuthorizationHolder": "Moderna Biotech"
     }
   },
   "issuer": "did:key:z6MkrtYMJe2ZesvsnoSr8K1yVerjo6EhC2G5jxBDKrD284L2",
   "proof": {
     "type": "Ed25519Signature2018",
-    "created": "2021-04-26T23:36:59Z",
-    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..FoGZEIFxHMWtcJIi3h7R1bLg_IWt0dpAFSqHROwo5bNv0a46eAgv1xAkzUTf_BD1f746yZTlVj86kJ7HECzFAQ",
+    "created": "2021-04-26T23:36:08Z",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..HdReMQX-xWwmlNRMbs3FtVG1V4puOzwbkqYza7tV-eFnsU1lnNPjKIOeXuMbbKoTfPUVATfkwIkXpm52Yr6vAQ",
     "proofPurpose": "assertionMethod",
     "verificationMethod": "did:key:z6MkrtYMJe2ZesvsnoSr8K1yVerjo6EhC2G5jxBDKrD284L2#z6MkrtYMJe2ZesvsnoSr8K1yVerjo6EhC2G5jxBDKrD284L2"
   }

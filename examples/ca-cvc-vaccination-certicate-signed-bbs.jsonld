@@ -1,0 +1,45 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3c-ccg.github.io/vaccination-vocab/context/v1/CA/unstable.json",
+    "https://w3id.org/security/bbs/v1"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "VaccinationCertificate"
+  ],
+  "id": "urn:uvci:af5vshde843jf831j128fj",
+  "name": "COVID-19 Vaccination Certificate",
+  "description": "COVID-19 Vaccination Certificate",
+  "issuanceDate": "2021-04-26T23:36:07.890Z",
+  "expirationDate": "2029-12-03T12:19:52Z",
+  "credentialSubject": {
+    "type": "VaccinationEvent",
+    "batchNumber": "UI256AA",
+    "administeringCentre": "0000004570208",
+    "healthProfessional": "LPN",
+    "countryOfVaccination": "CA",
+    "recipient": {
+      "type": "VaccineRecipient",
+      "givenName": "JOHN",
+      "familyName": "SMITH",
+      "gender": "Male",
+      "birthDate": "1958-07-17"
+    },
+    "vaccine": {
+      "type": "Vaccine",
+      "disease": "COVID-19",
+      "atcCode": "28571000087109",
+      "medicinalProductName": "MODERNA COVID-19 mRNA-1273 (COVID-19)",
+      "marketingAuthorizationHolder": "Moderna Biotech"
+    }
+  },
+  "issuer": "did:key:zUC7GzuVjp44WBcSw549iMLAtKrEe7mpfePniskcQkQruAGePqJqKnRcVrSCxvDKFiXN3mPWmkYeaL4nhKrHyiTmnfV6epMgvnAmeqn8LFaaPcBN3XbehMGJu86Gnk6RYmpkg7U",
+  "proof": {
+    "type": "BbsBlsSignature2020",
+    "created": "2021-04-26T23:36:08Z",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "kDCyDHcy5EKSv6aLPCICiVdaTOQHHQ7HDOyfQZ4fabRR0OnL/6aTVlhTBiwojiF4Hx2tBgCssrKj4yNU0wWVIQMH5hxl4Nl+Oe29ve+YSRdAr8/mfa73XNUWPqIDOZJjoLel4YFZlA7t1xpxHSjwdQ==",
+    "verificationMethod": "did:key:zUC7GzuVjp44WBcSw549iMLAtKrEe7mpfePniskcQkQruAGePqJqKnRcVrSCxvDKFiXN3mPWmkYeaL4nhKrHyiTmnfV6epMgvnAmeqn8LFaaPcBN3XbehMGJu86Gnk6RYmpkg7U#zUC7GzuVjp44WBcSw549iMLAtKrEe7mpfePniskcQkQruAGePqJqKnRcVrSCxvDKFiXN3mPWmkYeaL4nhKrHyiTmnfV6epMgvnAmeqn8LFaaPcBN3XbehMGJu86Gnk6RYmpkg7U"
+  }
+}
