@@ -1,0 +1,135 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "description": "http://schema.org/description",
+        "identifier": "http://schema.org/identifier",
+        "name": "http://schema.org/name",
+        "image": "http://schema.org/image",
+        
+        "VaccinationCertificate": {
+            "@id": "https://w3id.org/vaccination#VaccinationCertificate",
+ 
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "description": "http://schema.org/description",
+                "identifier": "http://schema.org/identifier",
+                "name": "http://schema.org/name",
+                "image": "http://schema.org/image"
+            }
+        },
+
+        "VaccinationEvent": {
+            "@id": "https://w3id.org/vaccination#VaccinationEvent",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "administeringCentre": {
+                    "@id": "http://www.gs1.org/gln",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
+                },
+                "batchNumber": {
+                    "@id": "https://cvc.canimmunize.ca/v3/StructureDefinition/ca-cvc-lots",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
+                },
+                "countryOfVaccination": {
+                    "@id": "http://hl7.org/fhir/ValueSet/iso3166-1-2",
+                    "@type":"http://www.w3.org/2001/XMLSchema#string"
+                },
+                "dateOfVaccination": {
+                    "@id": "http://hl7.org/fhir/ca/baseline/Immunization.occurenceDateTime",
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                },
+                "healthProfessional": {
+                    "@id": "https://cvc.canimmunize.ca/v3/ValueSet/HealthcareProviderRoleType",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
+                },
+                "nextVaccinationDate": {
+                    "@id": "http://hl7.org/fhir/ca/baseline/ImmunizationRecommendation.dateCriterion.value",
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                },
+                "order": {
+                    "@id": "http://hl7.org/fhir/ca/baseline/Immunization.protocolApplied.doseNumber",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
+                },
+                "recipient": {
+                    "@id": "https://w3id.org/vaccination#recipient",
+                    "@type": "https://w3id.org/vaccination#VaccineRecipient"
+                       
+                },
+                "vaccine": {
+                    "@id": "http://hl7.org/fhir/ca/baseline/ValueSet/vaccinecodes",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            }
+        },
+
+        "VaccineRecipient": {
+            "@id": "https://w3id.org/vaccination#VaccineRecipient",
+            
+
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+
+                "id": "@id",
+                "type": "@type",
+
+                "birthDate": {
+                    "@id": "http://hl7.org/fhir/ca/baseline/Patient.birthDate",
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                },
+                "familyName": { 
+                    "@id": "http://hl7.org/fhir/ca/baseline/Patient.name.familyName",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
+                },
+                "gender": { 
+                    "@id": "https://cvc.canimmunize.ca/v3/ValueSet/AdminGender",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
+                },
+                "givenName": { 
+                    "@id": "http://hl7.org/fhir/ca/baseline/Patient.name.givenName",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
+                }
+            }
+        },
+
+        "Vaccine": {
+            "@id": "https://w3id.org/vaccination#Vaccine",
+            
+
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+
+                "id": "@id",
+                "type": "@type",
+
+                "atcCode": {
+                    "@id": "http://hl7.org/fhir/ca/baseline/ValueSet/vaccinecodes",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
+                },
+                "disease": {
+                    "@type": "http://www.w3.org/2001/XMLSchema#string",
+                    "@id": "https://cvc.canimmunize.ca/v3/ValueSet/Disease"
+                },
+                "event": {
+                    "@id": "https://w3id.org/vaccination#VaccineRecipientVaccineEvent",
+                    "@type": "https://w3id.org/vaccination#VaccineEvent"
+                },
+                "marketingAuthorizationHolder": "https://w3id.org/vaccination#marketingAuthorizationHolder",
+                "medicinalProductName": {
+                    "@id": "https://cvc.canimmunize.ca/v3/Bundle/Tradename",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
+                } 
+            }
+        }
+    }
+}
